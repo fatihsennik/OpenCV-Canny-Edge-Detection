@@ -5,6 +5,8 @@
 Canny Edge Detection is a popular edge detection algorithm. It was developed by John F. Canny
 It is a multi-stage algorithm and I will go through each stages.
 
+ ![alt text](https://github.com/senniksoft/OpenCV-Canny-Edge-Detection/blob/master/processed%20images/img3/im03.png)
+  
 1)Noise Reduction
 
 Since edge detection is susceptible to noise in the image, first step is to remove the noise in the image with a 5x5 Gaussian filter. Smoothing using Well Known Gaussian filter Function
@@ -67,6 +69,7 @@ python edge_detector.py im01.jpg
   4)After Non-Maximum Suppression
   5)After Edge Tracking
   6)After Edge Tracking using OpenCV Function for canny edge algorithm
+  ![alt text](https://github.com/senniksoft/OpenCV-Canny-Edge-Detection/blob/master/processed%20images/img3/im03.png)
   
 ## Authors
 
