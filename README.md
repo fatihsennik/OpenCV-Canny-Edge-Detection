@@ -7,7 +7,7 @@ It is a multi-stage algorithm and I will go through each stages.
 
  ![alt text](https://github.com/senniksoft/OpenCV-Canny-Edge-Detection/blob/master/processed%20images/img3/im03.png)
   
-1)Noise Reduction
+#### 1)Noise Reduction
 
 Since edge detection is susceptible to noise in the image, first step is to remove the noise in the image with a 5x5 Gaussian filter. Smoothing using Well Known Gaussian filter Function
 It is inevitable that all images taken from a camera will contain some amount of noise.
@@ -22,7 +22,7 @@ These areas are found by determining gradients of the image.
 Gradients at each pixel in the smoothed image are determined by applying
 what is known as the Sobel-operator.
 
-2)Non-maximum Suppression
+#### 2)Non-maximum Suppression
 
 Non-maximum suppression Function. The purpose of this step is to convert the blurred edges
 in the image of the gradient magnitudes
@@ -30,7 +30,7 @@ to sharp edges. Basically this is done by preserving all local maxima in the gra
 and deleting everything else. The algorithm is for each pixel in the gradient image
 In short, the result you get is a binary image with "thin edges".
 
-3)Hysteresis Thresholding
+#### 3)Hysteresis Thresholding
 
 Edge tracking by hysteresis
 Strong edges are interpreted as “certain edges”, and can immediately be included in the final edge image.
@@ -63,12 +63,12 @@ python edge_detector.py im01.jpg
 #  Features!
 
   - All Canny Edge Detection's each stages are plotted on figure. The Stages are as following;
-  1)Original Image
-  2)After Gaussian Filter
-  3)After Gradient
-  4)After Non-Maximum Suppression
-  5)After Edge Tracking
-  6)After Edge Tracking using OpenCV Function for canny edge algorithm
+  ##### 1)Original Image
+  ##### 2)After Gaussian Filter
+  ##### 3)After Gradient
+  ##### 4)After Non-Maximum Suppression
+  ##### 5)After Edge Tracking
+  ##### 6)After Edge Tracking using OpenCV Function for canny edge algorithm
   ![alt text](https://github.com/senniksoft/OpenCV-Canny-Edge-Detection/blob/master/processed%20images/img3/im03.png)
   
 ## Authors
