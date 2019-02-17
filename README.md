@@ -1,10 +1,11 @@
 # OpenCV Canny Edge Detection
 
 ## How Does Canny Edge Detection work ?
+
 Canny Edge Detection is a popular edge detection algorithm. It was developed by John F. Canny
 It is a multi-stage algorithm and I will go through each stages.
 
-###1)Noise Reduction
+1)Noise Reduction
 
 Since edge detection is susceptible to noise in the image, first step is to remove the noise in the image with a 5x5 Gaussian filter. Smoothing using Well Known Gaussian filter Function
 It is inevitable that all images taken from a camera will contain some amount of noise.
